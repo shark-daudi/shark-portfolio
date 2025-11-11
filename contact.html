@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Project Shark Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: white;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <header class="bg-[#0f172a]/90 sticky top-0 z-50 backdrop-blur-md shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-[#38bdf8]">🦈 Shark Portfolio</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="index.html" class="hover:text-[#38bdf8]">Home</a>
+        <a href="about.html" class="hover:text-[#38bdf8]">About</a>
+        <a href="achievements.html" class="hover:text-[#38bdf8]">Achievements</a>
+        <a href="projects.html" class="hover:text-[#38bdf8]">Projects</a>
+        <a href="contact.html" class="text-[#38bdf8] font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="flex-grow container mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-[#38bdf8] mb-4">Get in Touch</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Have a project idea, collaboration, or opportunity?  
+        Feel free to reach out — I’d love to connect!
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="max-w-3xl mx-auto bg-[#1e293b]/60 p-8 rounded-2xl shadow-md border border-[#38bdf8]/30">
+      <form action="https://formspree.io/f/mwkgpqar" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block text-gray-300 font-medium mb-2">Full Name</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full p-3 rounded-md bg-[#0f172a] border border-[#38bdf8]/30 text-white focus:border-[#38bdf8] focus:ring-[#38bdf8] outline-none">
+        </div>
+
+        <div>
+          <label for="email" class="block text-gray-300 font-medium mb-2">Email Address</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full p-3 rounded-md bg-[#0f172a] border border-[#38bdf8]/30 text-white focus:border-[#38bdf8] focus:ring-[#38bdf8] outline-none">
+        </div>
+
+        <div>
+          <label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" required
+                    class="w-full p-3 rounded-md bg-[#0f172a] border border-[#38bdf8]/30 text-white focus:border-[#38bdf8] focus:ring-[#38bdf8] outline-none"></textarea>
+        </div>
+
+        <button type="submit"
+                class="bg-[#38bdf8] text-black font-semibold px-8 py-3 rounded-full hover:bg-[#0ea5e9] transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Links -->
+    <div class="text-center mt-12 space-y-4">
+      <p class="text-gray-400">Or connect with me directly:</p>
+      <div class="flex justify-center gap-6 text-lg">
+        <a href="mailto:davidnzilu79@gmail.com" class="hover:text-[#38bdf8]">📧 Email</a>
+        <a href="https://github.com/daudi-shark" target="_blank" class="hover:text-[#38bdf8]">💻 GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-[#38bdf8]">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-700 mt-12">
+    <p class="text-gray-400 text-sm">
+      © 2025 Shark Portfolio | Built by <span class="text-[#38bdf8] font-semibold">Daudi 🦈</span>
+    </p>
+  </footer>
+</body>
+</html>
